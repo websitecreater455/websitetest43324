@@ -17,12 +17,12 @@
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://cmero-ott-live-app-svod-sec.ssl.cdn.cra.cz/QtkRs3_50fUkiC1MIvTdBg==,1684770961/channels/cme-ro-protv/playlist/rum/live_mq.m3u8?offsetSeconds=0&url=1');
+    hls.loadSource('https://cmero-ott-live-app-svod-sec.ssl.cdn.cra.cz/PwlVzNsnhYyAyEyNXTPREA==,1684792764/channels/cme-ro-protv/playlist/rum/live_hd.m3u8?offsetSeconds=0&url=1');
     hls.attachMedia(video);
     video.play();
   }
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://cmero-ott-live-app-svod-sec.ssl.cdn.cra.cz/QtkRs3_50fUkiC1MIvTdBg==,1684770961/channels/cme-ro-protv/playlist/rum/live_mq.m3u8?offsetSeconds=0&url=1';
+    video.src = 'https://cmero-ott-live-app-svod-sec.ssl.cdn.cra.cz/PwlVzNsnhYyAyEyNXTPREA==,1684792764/channels/cme-ro-protv/playlist/rum/live_hd.m3u8?offsetSeconds=0&url=1';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
